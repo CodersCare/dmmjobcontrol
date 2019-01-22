@@ -1,7 +1,10 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: info
- * Date: 04.11.2018
- * Time: 12:38
- */
+
+namespace CodersCare\DmmJobControl\Domain\Repository;
+
+use TYPO3\CMS\Extbase\Persistence\Repository;
+
+class EducationRepository extends Repository
+{
+
+}

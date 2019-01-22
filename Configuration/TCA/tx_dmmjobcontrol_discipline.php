@@ -1,74 +1,74 @@
 <?php
 
 
-return array (
-    'ctrl' => array (
-        'title'     => 'LLL:EXT:dmmjobcontrol/locallang_db.xml:tx_dmmjobcontrol_discipline',
-        'label'     => 'name',
-        'tstamp'    => 'tstamp',
-        'crdate'    => 'crdate',
-        'cruser_id' => 'cruser_id',
-        'searchfield' => 'name',
+return [
+    'ctrl'        => [
+        'title'                    => 'LLL:EXT:dmmjobcontrol/locallang_db.xml:tx_dmmjobcontrol_discipline',
+        'label'                    => 'name',
+        'tstamp'                   => 'tstamp',
+        'crdate'                   => 'crdate',
+        'cruser_id'                => 'cruser_id',
+        'searchfield'              => 'name',
         'languageField'            => 'sys_language_uid',
         'transOrigPointerField'    => 'l18n_parent',
         'transOrigDiffSourceField' => 'l18n_diffsource',
-        'default_sortby' => 'ORDER BY name',
-        'sortby' => 'sorting',
-        'iconfile'          => 'EXT:dmmjobcontrol/icon_tx_dmmjobcontrol_discipline.gif',
-    ),
-    'feInterface' => array (
+        'default_sortby'           => 'ORDER BY name',
+        'sortby'                   => 'sorting',
+        'iconfile'                 => 'EXT:dmmjobcontrol/Resources/Public/Icons/discipline.gif',
+    ],
+    'feInterface' => [
         'fe_admin_fieldList' => 'sys_language_uid, l18n_parent, l18n_diffsource, name',
-    ),
-    "interface" => array (
-        "showRecordFieldList" => "sys_language_uid,l18n_parent,l18n_diffsource,name"
-    ),
-    "columns" => array (
-        'sys_language_uid' => array (
+    ],
+    "interface"   => [
+        "showRecordFieldList" => "sys_language_uid,l18n_parent,l18n_diffsource,name",
+    ],
+    "columns"     => [
+        'sys_language_uid' => [
             'exclude' => 1,
-            'label'  => 'LLL:EXT:lang/locallang_general.xml:LGL.language',
-            'config' => array (
+            'label'   => 'LLL:EXT:lang/locallang_general.xml:LGL.language',
+            'config'  => [
                 'type'                => 'select',
                 'foreign_table'       => 'sys_language',
                 'foreign_table_where' => 'ORDER BY sys_language.title',
-                'items' => array(
-                    array('LLL:EXT:lang/locallang_general.xml:LGL.allLanguages', -1),
-                    array('LLL:EXT:lang/locallang_general.xml:LGL.default_value', 0)
-                )
-            )
-        ),
-        'l18n_parent' => array (
+                'items'               => [
+                    ['LLL:EXT:lang/locallang_general.xml:LGL.allLanguages', -1],
+                    ['LLL:EXT:lang/locallang_general.xml:LGL.default_value', 0],
+                ],
+            ],
+        ],
+        'l18n_parent'      => [
             'displayCond' => 'FIELD:sys_language_uid:>:0',
             'exclude'     => 1,
             'label'       => 'LLL:EXT:lang/locallang_general.xml:LGL.l18n_parent',
-            'config'      => array (
-                'type'  => 'select',
-                'items' => array (
-                    array('', 0),
-                ),
+            'config'      => [
+                'type'                => 'select',
+                'items'               => [
+                    ['', 0],
+                ],
                 'foreign_table'       => 'tx_dmmjobcontrol_discipline',
                 'foreign_table_where' => 'AND tx_dmmjobcontrol_discipline.pid=###CURRENT_PID### AND tx_dmmjobcontrol_discipline.sys_language_uid IN (-1,0)',
-            )
-        ),
-        'l18n_diffsource' => array (
-            'config' => array (
-                'type' => 'passthrough'
-            )
-        ),
-        "name" => Array (
+            ],
+        ],
+        'l18n_diffsource'  => [
+            'config' => [
+                'type' => 'passthrough',
+            ],
+        ],
+        "name"             => [
             "exclude" => 1,
-            "label" => "LLL:EXT:dmmjobcontrol/locallang_db.xml:tx_dmmjobcontrol_discipline.name",
-            "config" => Array (
+            "label"   => "LLL:EXT:dmmjobcontrol/locallang_db.xml:tx_dmmjobcontrol_discipline.name",
+            "config"  => [
                 "type" => "input",
                 "size" => "30",
                 "eval" => "required",
-            )
-        ),
-    ),
-    "types" => array (
-        "0" => array("showitem" => "sys_language_uid;;;;1-1-1, l18n_parent, l18n_diffsource, name")
-    ),
-    "palettes" => array (
-        "1" => array("showitem" => "")
-    )
-);
+            ],
+        ],
+    ],
+    "types"       => [
+        "0" => ["showitem" => "sys_language_uid;;;;1-1-1, l18n_parent, l18n_diffsource, name"],
+    ],
+    "palettes"    => [
+        "1" => ["showitem" => ""],
+    ],
+];
 

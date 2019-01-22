@@ -1,64 +1,64 @@
 <?php
-return array (
-    "ctrl" => array (
-        'title'     => 'LLL:EXT:dmmjobcontrol/locallang_db.xml:tx_dmmjobcontrol_contact',
-        'label'     => 'name',
-        'tstamp'    => 'tstamp',
-        'crdate'    => 'crdate',
-        'searchfield' => 'name',
-        'cruser_id' => 'cruser_id',
+return [
+    "ctrl"        => [
+        'title'          => 'LLL:EXT:dmmjobcontrol/locallang_db.xml:tx_dmmjobcontrol_contact',
+        'label'          => 'name',
+        'tstamp'         => 'tstamp',
+        'crdate'         => 'crdate',
+        'searchfield'    => 'name',
+        'cruser_id'      => 'cruser_id',
         'default_sortby' => "ORDER BY name",
-        'sortby' => 'sorting',
-        'iconfile'          => 'EXT:dmmjobcontrol/icon_tx_dmmjobcontrol_contact.gif',
-    ),
-    "feInterface" => array (
+        'sortby'         => 'sorting',
+        'iconfile'       => 'EXT:dmmjobcontrol/Resources/Public/Icons/contact.gif',
+    ],
+    "feInterface" => [
         "fe_admin_fieldList" => "name, address, phone, email",
-    ),
-    "interface" => array (
-        "showRecordFieldList" => "name,address,phone,email"
-    ),
-    "columns" => array (
-        "name" => Array (
+    ],
+    "interface"   => [
+        "showRecordFieldList" => "name,address,phone,email",
+    ],
+    "columns"     => [
+        "name"    => [
             "exclude" => 1,
-            "label" => "LLL:EXT:dmmjobcontrol/locallang_db.xml:tx_dmmjobcontrol_contact.name",
-            "config" => Array (
+            "label"   => "LLL:EXT:dmmjobcontrol/locallang_db.xml:tx_dmmjobcontrol_contact.name",
+            "config"  => [
                 "type" => "input",
                 "size" => "30",
                 "eval" => "required",
-            )
-        ),
-        "address" => Array (
+            ],
+        ],
+        "address" => [
             "exclude" => 1,
-            "label" => "LLL:EXT:dmmjobcontrol/locallang_db.xml:tx_dmmjobcontrol_contact.address",
-            "config" => Array (
+            "label"   => "LLL:EXT:dmmjobcontrol/locallang_db.xml:tx_dmmjobcontrol_contact.address",
+            "config"  => [
                 "type" => "text",
                 "cols" => "30",
                 "rows" => "2",
-            )
-        ),
-        "phone" => Array (
+            ],
+        ],
+        "phone"   => [
             "exclude" => 1,
-            "label" => "LLL:EXT:dmmjobcontrol/locallang_db.xml:tx_dmmjobcontrol_contact.phone",
-            "config" => Array (
+            "label"   => "LLL:EXT:dmmjobcontrol/locallang_db.xml:tx_dmmjobcontrol_contact.phone",
+            "config"  => [
                 "type" => "input",
                 "size" => "30",
-            )
-        ),
-        "email" => Array (
+            ],
+        ],
+        "email"   => [
             "exclude" => 1,
-            "label" => "LLL:EXT:dmmjobcontrol/locallang_db.xml:tx_dmmjobcontrol_contact.email",
-            "config" => Array (
+            "label"   => "LLL:EXT:dmmjobcontrol/locallang_db.xml:tx_dmmjobcontrol_contact.email",
+            "config"  => [
                 "type" => "input",
                 "size" => "30",
                 "eval" => "required",
-            )
-        ),
-    ),
-    "types" => array (
-        "0" => array("showitem" => "name;;;;1-1-1, address, phone, email")
-    ),
-    "palettes" => array (
-        "1" => array("showitem" => "")
-    )
-);
+            ],
+        ],
+    ],
+    "types"       => [
+        "0" => ["showitem" => "name;;;;1-1-1, address, phone, email"],
+    ],
+    "palettes"    => [
+        "1" => ["showitem" => ""],
+    ],
+];
 

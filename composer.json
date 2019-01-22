@@ -1,0 +1,28 @@
+{
+  "name": "cosderscare/dmmjobcontrol",
+  "description": "This extension integrates the grid layout concept also to regular content elements - the grid elements. It offers a lot of new features like advanced drag & drop or real references, that improve the usability of the page and list module to speed up the daily work with the backend.",
+  "type": "typo3-cms-extension",
+  "version": "7.0.0",
+  "keywords": ["TYPO3 CMS", "Jobs"],
+  "homepage": "https://gitlab.com/coderscare/dmmjobcontrol",
+  "license": "GPL-2.0-or-later",
+  "support": {
+    "issues": "https://gitlab.com/coderscare/dmmjobcontrol/issues"
+  },
+  "require": {
+    "typo3/cms-core": "^7.6",
+    "typo3/cms-backend": "^7.6",
+    "typo3/cms-recordlist": "^7.6",
+    "typo3/cms-frontend": "^7.6",
+    "typo3/cms-lang": "^7.6"
+  },
+  "replace": {
+    "dmmjobcontrol": "self.version",
+    "typo3-ter/dmmjobcontrol": "self.version"
+  },
+  "autoload": {
+    "psr-4": {
+      "CodersCare\\DmmJobControl\\": "Classes/"
+    }
+  }
+}

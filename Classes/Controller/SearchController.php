@@ -1,7 +1,10 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: info
- * Date: 04.11.2018
- * Time: 12:50
- */
+
+namespace CodersCare\DmmJobControl\Controller;
+
+use TYPO3\CMS\Extbase\Mvc\Controller\ActionController;
+
+class SearchController extends ActionController
+{
+
+}
