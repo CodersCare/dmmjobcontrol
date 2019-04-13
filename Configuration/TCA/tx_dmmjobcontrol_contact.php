@@ -1,7 +1,7 @@
 <?php
 return [
     "ctrl"        => [
-        'title'          => 'LLL:EXT:dmmjobcontrol/locallang_db.xml:tx_dmmjobcontrol_contact',
+        'title'          => 'LLL:EXT:dmmjobcontrol/Resources/Private/Language/locallang_db.xml:tx_dmmjobcontrol_contact',
         'label'          => 'name',
         'tstamp'         => 'tstamp',
         'crdate'         => 'crdate',
@@ -20,7 +20,7 @@ return [
     "columns"     => [
         "name"    => [
             "exclude" => 1,
-            "label"   => "LLL:EXT:dmmjobcontrol/locallang_db.xml:tx_dmmjobcontrol_contact.name",
+            "label"   => "LLL:EXT:dmmjobcontrol/Resources/Private/Language/locallang_db.xml:tx_dmmjobcontrol_contact.name",
             "config"  => [
                 "type" => "input",
                 "size" => "30",
@@ -29,7 +29,7 @@ return [
         ],
         "address" => [
             "exclude" => 1,
-            "label"   => "LLL:EXT:dmmjobcontrol/locallang_db.xml:tx_dmmjobcontrol_contact.address",
+            "label"   => "LLL:EXT:dmmjobcontrol/Resources/Private/Language/locallang_db.xml:tx_dmmjobcontrol_contact.address",
             "config"  => [
                 "type" => "text",
                 "cols" => "30",
@@ -38,7 +38,7 @@ return [
         ],
         "phone"   => [
             "exclude" => 1,
-            "label"   => "LLL:EXT:dmmjobcontrol/locallang_db.xml:tx_dmmjobcontrol_contact.phone",
+            "label"   => "LLL:EXT:dmmjobcontrol/Resources/Private/Language/locallang_db.xml:tx_dmmjobcontrol_contact.phone",
             "config"  => [
                 "type" => "input",
                 "size" => "30",
@@ -46,7 +46,7 @@ return [
         ],
         "email"   => [
             "exclude" => 1,
-            "label"   => "LLL:EXT:dmmjobcontrol/locallang_db.xml:tx_dmmjobcontrol_contact.email",
+            "label"   => "LLL:EXT:dmmjobcontrol/Resources/Private/Language/locallang_db.xml:tx_dmmjobcontrol_contact.email",
             "config"  => [
                 "type" => "input",
                 "size" => "30",

@@ -1,7 +1,7 @@
 <?php
 return [
     'ctrl'        => [
-        'title'                    => 'LLL:EXT:dmmjobcontrol/locallang_db.xml:tx_dmmjobcontrol_region',
+        'title'                    => 'LLL:EXT:dmmjobcontrol/Resources/Private/Language/locallang_db.xml:tx_dmmjobcontrol_region',
         'label'                    => 'name',
         'tstamp'                   => 'tstamp',
         'crdate'                   => 'crdate',
@@ -12,7 +12,7 @@ return [
         'transOrigDiffSourceField' => 'l18n_diffsource',
         'default_sortby'           => 'ORDER BY name',
         'sortby'                   => 'sorting',
-        'iconfile'                 => 'EXT:dmmjobcontrolicon_tx_dmmjobcontrol_region.gif',
+        'iconfile'                 => 'EXT:dmmjobcontrol/Resources/Public/Icons/region.gif',
     ],
     'feInterface' => [
         'fe_admin_fieldList' => 'sys_language_uid, l18n_parent, l18n_diffsource, name',
@@ -54,7 +54,7 @@ return [
         ],
         "name"             => [
             "exclude" => 1,
-            "label"   => "LLL:EXT:dmmjobcontrol/locallang_db.xml:tx_dmmjobcontrol_region.name",
+            "label"   => "LLL:EXT:dmmjobcontrol/Resources/Private/Language/locallang_db.xml:tx_dmmjobcontrol_region.name",
             "config"  => [
                 "type" => "input",
                 "size" => "30",

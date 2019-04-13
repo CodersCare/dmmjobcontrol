@@ -8,7 +8,7 @@
 
 return [
     'ctrl'        => [
-        'title'                    => 'LLL:EXT:dmmjobcontrol/locallang_db.xml:tx_dmmjobcontrol_education',
+        'title'                    => 'LLL:EXT:dmmjobcontrol/Resources/Private/Language/locallang_db.xml:tx_dmmjobcontrol_education',
         'label'                    => 'name',
         'tstamp'                   => 'tstamp',
         'crdate'                   => 'crdate',
@@ -61,7 +61,7 @@ return [
         ],
         "name"             => [
             "exclude" => 1,
-            "label"   => "LLL:EXT:dmmjobcontrol/locallang_db.xml:tx_dmmjobcontrol_education.name",
+            "label"   => "LLL:EXT:dmmjobcontrol/Resources/Private/Language/locallang_db.xml:tx_dmmjobcontrol_education.name",
             "config"  => [
                 "type" => "input",
                 "size" => "30",

@@ -8,7 +8,7 @@
 
 return [
     'ctrl'        => [
-        'title'                    => 'LLL:EXT:dmmjobcontrol/locallang_db.xml:tx_dmmjobcontrol_category',
+        'title'                    => 'LLL:EXT:dmmjobcontrol/Resources/Private/Language/locallang_db.xml:tx_dmmjobcontrol_category',
         'label'                    => 'name',
         'tstamp'                   => 'tstamp',
         'crdate'                   => 'crdate',
@@ -61,7 +61,7 @@ return [
         ],
         "name"             => [
             "exclude" => 1,
-            "label"   => "LLL:EXT:dmmjobcontrol/locallang_db.xml:tx_dmmjobcontrol_category.name",
+            "label"   => "LLL:EXT:dmmjobcontrol/Resources/Private/Language/locallang_db.xml:tx_dmmjobcontrol_category.name",
             "config"  => [
                 "type" => "input",
                 "size" => "30",

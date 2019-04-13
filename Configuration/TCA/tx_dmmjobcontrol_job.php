@@ -3,7 +3,7 @@
 
 return [
     'ctrl'        => [
-        'title'                    => 'LLL:EXT:dmmjobcontrol/locallang_db.xml:tx_dmmjobcontrol_job',
+        'title'                    => 'LLL:EXT:dmmjobcontrol/Resources/Private/Language/locallang_db.xml:tx_dmmjobcontrol_job',
         'label'                    => 'job_title',
         'tstamp'                   => 'tstamp',
         'crdate'                   => 'crdate',
@@ -98,7 +98,7 @@ return [
         ],
         "reference"             => [
             "exclude" => 1,
-            "label"   => "LLL:EXT:dmmjobcontrol/locallang_db.xml:tx_dmmjobcontrol_job.reference",
+            "label"   => "LLL:EXT:dmmjobcontrol/Resources/Private/Language/locallang_db.xml:tx_dmmjobcontrol_job.reference",
             "config"  => [
                 "type" => "input",
                 "size" => "30",
@@ -106,7 +106,7 @@ return [
         ],
         "job_title"             => [
             "exclude" => 1,
-            "label"   => "LLL:EXT:dmmjobcontrol/locallang_db.xml:tx_dmmjobcontrol_job.job_title",
+            "label"   => "LLL:EXT:dmmjobcontrol/Resources/Private/Language/locallang_db.xml:tx_dmmjobcontrol_job.job_title",
             "config"  => [
                 "type" => "input",
                 "size" => "30",
@@ -115,7 +115,7 @@ return [
         ],
         "employer"              => [
             "exclude" => 1,
-            "label"   => "LLL:EXT:dmmjobcontrol/locallang_db.xml:tx_dmmjobcontrol_job.employer",
+            "label"   => "LLL:EXT:dmmjobcontrol/Resources/Private/Language/locallang_db.xml:tx_dmmjobcontrol_job.employer",
             "config"  => [
                 "type" => "input",
                 "size" => "30",
@@ -123,27 +123,29 @@ return [
         ],
         "employer_description"  => [
             "exclude" => 1,
-            "label"   => "LLL:EXT:dmmjobcontrol/locallang_db.xml:tx_dmmjobcontrol_job.employer_description",
+            "label"   => "LLL:EXT:dmmjobcontrol/Resources/Private/Language/locallang_db.xml:tx_dmmjobcontrol_job.employer_description",
             "config"  => [
                 "type"    => "text",
                 "cols"    => "30",
                 "rows"    => "5",
                 "wizards" => [
                     "_PADDING" => 2,
-                    "RTE"      => [
-                        "notNewRecords" => 1,
-                        "RTEonly"       => 1,
-                        "type"          => "script",
-                        "title"         => "Full screen Rich Text Editing|Formatteret redigering i hele vinduet",
-                        "icon"          => "wizard_rte2.gif",
-                        "script"        => "wizard_rte.php",
-                    ],
+                    'RTE' => [
+                        'notNewRecords' => 1,
+                        'RTEonly' => 1,
+                        'type' => 'script',
+                        'title' => 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:bodytext.W.RTE',
+                        'icon' => 'actions-wizard-rte',
+                        'module' => [
+                            'name' => 'wizard_rte'
+                        ]
+                    ]
                 ],
             ],
         ],
         "location"              => [
             "exclude" => 1,
-            "label"   => "LLL:EXT:dmmjobcontrol/locallang_db.xml:tx_dmmjobcontrol_job.location",
+            "label"   => "LLL:EXT:dmmjobcontrol/Resources/Private/Language/locallang_db.xml:tx_dmmjobcontrol_job.location",
             "config"  => [
                 "type" => "input",
                 "size" => "30",
@@ -151,53 +153,59 @@ return [
         ],
         "region"                => [
             "exclude" => 1,
-            "label"   => "LLL:EXT:dmmjobcontrol/locallang_db.xml:tx_dmmjobcontrol_job.region",
+            "label"   => "LLL:EXT:dmmjobcontrol/Resources/Private/Language/locallang_db.xml:tx_dmmjobcontrol_job.region",
             "config"  => [
                 "type"                => "select",
                 "foreign_table"       => "tx_dmmjobcontrol_region",
-                "foreign_table_where" => "AND tx_dmmjobcontrol_region.pid=###STORAGE_PID### AND tx_dmmjobcontrol_region.sys_language_uid=CAST('###REC_FIELD_sys_language_uid###' AS UNSIGNED) ORDER BY tx_dmmjobcontrol_region.uid",
+                "foreign_table_where" => "AND tx_dmmjobcontrol_region.sys_language_uid=CAST('###REC_FIELD_sys_language_uid###' AS UNSIGNED) ORDER BY tx_dmmjobcontrol_region.uid",
                 "size"                => 10,
                 "minitems"            => 0,
                 "maxitems"            => 100,
                 "MM"                  => "tx_dmmjobcontrol_job_region_mm",
-                "wizards"             => [
+                'wizards' => [
                     "_PADDING"  => 2,
-                    "_VERTICAL" => 1,
-                    "add"       => [
-                        "type"   => "script",
-                        "title"  => "Create new record",
-                        "icon"   => "add.gif",
-                        "params" => [
+                    '_VERTICAL' => 1,
+                    'edit' => [
+                        'type' => 'popup',
+                        'title' => 'Edit',
+                        'module' => [
+                            'name' => 'wizard_edit',
+                        ],
+                        'popup_onlyOpenIfSelected' => 1,
+                        'icon' => 'actions-open',
+                        'JSopenParams' => 'width=800,height=600,status=0,menubar=0,scrollbars=1'
+                    ],
+                    'add' => [
+                        'type' => 'script',
+                        'title' => 'Create new record',
+                        'icon' => 'actions-add',
+                        'params' => [
                             "table"    => "tx_dmmjobcontrol_region",
                             "pid"      => "###CURRENT_PID###",
                             "setValue" => "prepend",
                         ],
-                        "script" => "wizard_add.php",
+                        'module' => [
+                            'name' => 'wizard_add'
+                        ]
                     ],
-                    "list"      => [
-                        "type"   => "script",
-                        "title"  => "List",
-                        "icon"   => "list.gif",
-                        "params" => [
+                    'list' => [
+                        'type' => 'script',
+                        'title' => 'List',
+                        'icon' => 'actions-system-list-open',
+                        'params' => [
                             "table" => "tx_dmmjobcontrol_region",
                             "pid"   => "###CURRENT_PID###",
                         ],
-                        "script" => "wizard_list.php",
-                    ],
-                    "edit"      => [
-                        "type"                     => "popup",
-                        "title"                    => "Edit",
-                        "script"                   => "wizard_edit.php",
-                        "popup_onlyOpenIfSelected" => 1,
-                        "icon"                     => "edit2.gif",
-                        "JSopenParams"             => "height=350,width=580,status=0,menubar=0,scrollbars=1",
-                    ],
+                        'module' => [
+                            'name' => 'wizard_list'
+                        ]
+                    ]
                 ],
             ],
         ],
         "short_job_description" => [
             "exclude" => 1,
-            "label"   => "LLL:EXT:dmmjobcontrol/locallang_db.xml:tx_dmmjobcontrol_job.short_job_description",
+            "label"   => "LLL:EXT:dmmjobcontrol/Resources/Private/Language/locallang_db.xml:tx_dmmjobcontrol_job.short_job_description",
             "config"  => [
                 "type" => "text",
                 "cols" => "30",
@@ -206,27 +214,29 @@ return [
         ],
         "job_description"       => [
             "exclude" => 1,
-            "label"   => "LLL:EXT:dmmjobcontrol/locallang_db.xml:tx_dmmjobcontrol_job.job_description",
+            "label"   => "LLL:EXT:dmmjobcontrol/Resources/Private/Language/locallang_db.xml:tx_dmmjobcontrol_job.job_description",
             "config"  => [
                 "type"    => "text",
                 "cols"    => "30",
                 "rows"    => "5",
                 "wizards" => [
                     "_PADDING" => 2,
-                    "RTE"      => [
-                        "notNewRecords" => 1,
-                        "RTEonly"       => 1,
-                        "type"          => "script",
-                        "title"         => "Full screen Rich Text Editing|Formatteret redigering i hele vinduet",
-                        "icon"          => "wizard_rte2.gif",
-                        "script"        => "wizard_rte.php",
-                    ],
+                    'RTE' => [
+                        'notNewRecords' => 1,
+                        'RTEonly' => 1,
+                        'type' => 'script',
+                        'title' => 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:bodytext.W.RTE',
+                        'icon' => 'actions-wizard-rte',
+                        'module' => [
+                            'name' => 'wizard_rte'
+                        ]
+                    ]
                 ],
             ],
         ],
         "experience"            => [
             "exclude" => 1,
-            "label"   => "LLL:EXT:dmmjobcontrol/locallang_db.xml:tx_dmmjobcontrol_job.experience",
+            "label"   => "LLL:EXT:dmmjobcontrol/Resources/Private/Language/locallang_db.xml:tx_dmmjobcontrol_job.experience",
             "config"  => [
                 "type" => "input",
                 "size" => "30",
@@ -234,67 +244,73 @@ return [
         ],
         "job_requirements"      => [
             "exclude" => 1,
-            "label"   => "LLL:EXT:dmmjobcontrol/locallang_db.xml:tx_dmmjobcontrol_job.job_requirements",
+            "label"   => "LLL:EXT:dmmjobcontrol/Resources/Private/Language/locallang_db.xml:tx_dmmjobcontrol_job.job_requirements",
             "config"  => [
                 "type"    => "text",
                 "cols"    => "30",
                 "rows"    => "5",
                 "wizards" => [
                     "_PADDING" => 2,
-                    "RTE"      => [
-                        "notNewRecords" => 1,
-                        "RTEonly"       => 1,
-                        "type"          => "script",
-                        "title"         => "Full screen Rich Text Editing|Formatteret redigering i hele vinduet",
-                        "icon"          => "wizard_rte2.gif",
-                        "script"        => "wizard_rte.php",
-                    ],
+                    'RTE' => [
+                        'notNewRecords' => 1,
+                        'RTEonly' => 1,
+                        'type' => 'script',
+                        'title' => 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:bodytext.W.RTE',
+                        'icon' => 'actions-wizard-rte',
+                        'module' => [
+                            'name' => 'wizard_rte'
+                        ]
+                    ]
                 ],
             ],
         ],
         "job_benefits"          => [
             "exclude" => 1,
-            "label"   => "LLL:EXT:dmmjobcontrol/locallang_db.xml:tx_dmmjobcontrol_job.job_benefits",
+            "label"   => "LLL:EXT:dmmjobcontrol/Resources/Private/Language/locallang_db.xml:tx_dmmjobcontrol_job.job_benefits",
             "config"  => [
                 "type"    => "text",
                 "cols"    => "30",
                 "rows"    => "5",
                 "wizards" => [
                     "_PADDING" => 2,
-                    "RTE"      => [
-                        "notNewRecords" => 1,
-                        "RTEonly"       => 1,
-                        "type"          => "script",
-                        "title"         => "Full screen Rich Text Editing|Formatteret redigering i hele vinduet",
-                        "icon"          => "wizard_rte2.gif",
-                        "script"        => "wizard_rte.php",
-                    ],
+                    'RTE' => [
+                        'notNewRecords' => 1,
+                        'RTEonly' => 1,
+                        'type' => 'script',
+                        'title' => 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:bodytext.W.RTE',
+                        'icon' => 'actions-wizard-rte',
+                        'module' => [
+                            'name' => 'wizard_rte'
+                        ]
+                    ]
                 ],
             ],
         ],
         "apply_information"     => [
             "exclude" => 1,
-            "label"   => "LLL:EXT:dmmjobcontrol/locallang_db.xml:tx_dmmjobcontrol_job.apply_information",
+            "label"   => "LLL:EXT:dmmjobcontrol/Resources/Private/Language/locallang_db.xml:tx_dmmjobcontrol_job.apply_information",
             "config"  => [
                 "type"    => "text",
                 "cols"    => "30",
                 "rows"    => "5",
                 "wizards" => [
                     "_PADDING" => 2,
-                    "RTE"      => [
-                        "notNewRecords" => 1,
-                        "RTEonly"       => 1,
-                        "type"          => "script",
-                        "title"         => "Full screen Rich Text Editing|Formatteret redigering i hele vinduet",
-                        "icon"          => "wizard_rte2.gif",
-                        "script"        => "wizard_rte.php",
-                    ],
+                    'RTE' => [
+                        'notNewRecords' => 1,
+                        'RTEonly' => 1,
+                        'type' => 'script',
+                        'title' => 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:bodytext.W.RTE',
+                        'icon' => 'actions-wizard-rte',
+                        'module' => [
+                            'name' => 'wizard_rte'
+                        ]
+                    ]
                 ],
             ],
         ],
         "salary"                => [
             "exclude" => 1,
-            "label"   => "LLL:EXT:dmmjobcontrol/locallang_db.xml:tx_dmmjobcontrol_job.salary",
+            "label"   => "LLL:EXT:dmmjobcontrol/Resources/Private/Language/locallang_db.xml:tx_dmmjobcontrol_job.salary",
             "config"  => [
                 "type" => "text",
                 "cols" => "30",
@@ -303,12 +319,12 @@ return [
         ],
         "job_type"              => [
             "exclude" => 1,
-            "label"   => "LLL:EXT:dmmjobcontrol/locallang_db.xml:tx_dmmjobcontrol_job.job_type",
+            "label"   => "LLL:EXT:dmmjobcontrol/Resources/Private/Language/locallang_db.xml:tx_dmmjobcontrol_job.job_type",
             "config"  => [
                 "type"     => "select",
                 "items"    => [
-                    ["LLL:EXT:dmmjobcontrol/locallang_db.xml:tx_dmmjobcontrol_job.job_type.I.0", "0"],
-                    ["LLL:EXT:dmmjobcontrol/locallang_db.xml:tx_dmmjobcontrol_job.job_type.I.1", "1"],
+                    ["LLL:EXT:dmmjobcontrol/Resources/Private/Language/locallang_db.xml:tx_dmmjobcontrol_job.job_type.I.0", "0"],
+                    ["LLL:EXT:dmmjobcontrol/Resources/Private/Language/locallang_db.xml:tx_dmmjobcontrol_job.job_type.I.1", "1"],
                 ],
                 "size"     => 1,
                 "maxitems" => 1,
@@ -316,14 +332,14 @@ return [
         ],
         "contract_type"         => [
             "exclude" => 1,
-            "label"   => "LLL:EXT:dmmjobcontrol/locallang_db.xml:tx_dmmjobcontrol_job.contract_type",
+            "label"   => "LLL:EXT:dmmjobcontrol/Resources/Private/Language/locallang_db.xml:tx_dmmjobcontrol_job.contract_type",
             "config"  => [
                 "type"     => "select",
                 "items"    => [
-                    ["LLL:EXT:dmmjobcontrol/locallang_db.xml:tx_dmmjobcontrol_job.contract_type.I.0", "0"],
-                    ["LLL:EXT:dmmjobcontrol/locallang_db.xml:tx_dmmjobcontrol_job.contract_type.I.1", "1"],
-                    ["LLL:EXT:dmmjobcontrol/locallang_db.xml:tx_dmmjobcontrol_job.contract_type.I.2", "2"],
-                    ["LLL:EXT:dmmjobcontrol/locallang_db.xml:tx_dmmjobcontrol_job.contract_type.I.3", "3"],
+                    ["LLL:EXT:dmmjobcontrol/Resources/Private/Language/locallang_db.xml:tx_dmmjobcontrol_job.contract_type.I.0", "0"],
+                    ["LLL:EXT:dmmjobcontrol/Resources/Private/Language/locallang_db.xml:tx_dmmjobcontrol_job.contract_type.I.1", "1"],
+                    ["LLL:EXT:dmmjobcontrol/Resources/Private/Language/locallang_db.xml:tx_dmmjobcontrol_job.contract_type.I.2", "2"],
+                    ["LLL:EXT:dmmjobcontrol/Resources/Private/Language/locallang_db.xml:tx_dmmjobcontrol_job.contract_type.I.3", "3"],
                 ],
                 "size"     => 1,
                 "maxitems" => 1,
@@ -331,223 +347,251 @@ return [
         ],
         "sector"                => [
             "exclude" => 1,
-            "label"   => "LLL:EXT:dmmjobcontrol/locallang_db.xml:tx_dmmjobcontrol_job.sector",
+            "label"   => "LLL:EXT:dmmjobcontrol/Resources/Private/Language/locallang_db.xml:tx_dmmjobcontrol_job.sector",
             "config"  => [
                 "type"                => "select",
                 "foreign_table"       => "tx_dmmjobcontrol_sector",
-                "foreign_table_where" => "AND tx_dmmjobcontrol_sector.pid=###STORAGE_PID### AND tx_dmmjobcontrol_sector.sys_language_uid=CAST('###REC_FIELD_sys_language_uid###' AS UNSIGNED) ORDER BY tx_dmmjobcontrol_sector.uid",
+                "foreign_table_where" => "AND tx_dmmjobcontrol_sector.sys_language_uid=CAST('###REC_FIELD_sys_language_uid###' AS UNSIGNED) ORDER BY tx_dmmjobcontrol_sector.uid",
                 "size"                => 10,
                 "minitems"            => 0,
                 "maxitems"            => 100,
                 "MM"                  => "tx_dmmjobcontrol_job_sector_mm",
-                "wizards"             => [
+                'wizards' => [
                     "_PADDING"  => 2,
-                    "_VERTICAL" => 1,
-                    "add"       => [
-                        "type"   => "script",
-                        "title"  => "Create new record",
-                        "icon"   => "add.gif",
-                        "params" => [
+                    '_VERTICAL' => 1,
+                    'edit' => [
+                        'type' => 'popup',
+                        'title' => 'Edit',
+                        'module' => [
+                            'name' => 'wizard_edit',
+                        ],
+                        'popup_onlyOpenIfSelected' => 1,
+                        'icon' => 'actions-open',
+                        'JSopenParams' => 'width=800,height=600,status=0,menubar=0,scrollbars=1'
+                    ],
+                    'add' => [
+                        'type' => 'script',
+                        'title' => 'Create new record',
+                        'icon' => 'actions-add',
+                        'params' => [
                             "table"    => "tx_dmmjobcontrol_sector",
                             "pid"      => "###CURRENT_PID###",
                             "setValue" => "prepend",
                         ],
-                        "script" => "wizard_add.php",
+                        'module' => [
+                            'name' => 'wizard_add'
+                        ]
                     ],
-                    "list"      => [
-                        "type"   => "script",
-                        "title"  => "List",
-                        "icon"   => "list.gif",
-                        "params" => [
+                    'list' => [
+                        'type' => 'script',
+                        'title' => 'List',
+                        'icon' => 'actions-system-list-open',
+                        'params' => [
                             "table" => "tx_dmmjobcontrol_sector",
                             "pid"   => "###CURRENT_PID###",
                         ],
-                        "script" => "wizard_list.php",
-                    ],
-                    "edit"      => [
-                        "type"                     => "popup",
-                        "title"                    => "Edit",
-                        "script"                   => "wizard_edit.php",
-                        "popup_onlyOpenIfSelected" => 1,
-                        "icon"                     => "edit2.gif",
-                        "JSopenParams"             => "height=350,width=580,status=0,menubar=0,scrollbars=1",
-                    ],
+                        'module' => [
+                            'name' => 'wizard_list'
+                        ]
+                    ]
                 ],
             ],
         ],
         "category"              => [
             "exclude" => 1,
-            "label"   => "LLL:EXT:dmmjobcontrol/locallang_db.xml:tx_dmmjobcontrol_job.category",
+            "label"   => "LLL:EXT:dmmjobcontrol/Resources/Private/Language/locallang_db.xml:tx_dmmjobcontrol_job.category",
             "config"  => [
                 "type"                => "select",
                 "foreign_table"       => "tx_dmmjobcontrol_category",
-                "foreign_table_where" => "AND tx_dmmjobcontrol_category.pid=###STORAGE_PID### AND tx_dmmjobcontrol_category.sys_language_uid=CAST('###REC_FIELD_sys_language_uid###' AS UNSIGNED) ORDER BY tx_dmmjobcontrol_category.uid",
+                "foreign_table_where" => "AND tx_dmmjobcontrol_category.sys_language_uid=CAST('###REC_FIELD_sys_language_uid###' AS UNSIGNED) ORDER BY tx_dmmjobcontrol_category.uid",
                 "size"                => 10,
                 "minitems"            => 0,
                 "maxitems"            => 100,
                 "MM"                  => "tx_dmmjobcontrol_job_category_mm",
-                "wizards"             => [
+                'wizards' => [
                     "_PADDING"  => 2,
-                    "_VERTICAL" => 1,
-                    "add"       => [
-                        "type"   => "script",
-                        "title"  => "Create new record",
-                        "icon"   => "add.gif",
-                        "params" => [
+                    '_VERTICAL' => 1,
+                    'edit' => [
+                        'type' => 'popup',
+                        'title' => 'Edit',
+                        'module' => [
+                            'name' => 'wizard_edit',
+                        ],
+                        'popup_onlyOpenIfSelected' => 1,
+                        'icon' => 'actions-open',
+                        'JSopenParams' => 'width=800,height=600,status=0,menubar=0,scrollbars=1'
+                    ],
+                    'add' => [
+                        'type' => 'script',
+                        'title' => 'Create new record',
+                        'icon' => 'actions-add',
+                        'params' => [
                             "table"    => "tx_dmmjobcontrol_category",
                             "pid"      => "###CURRENT_PID###",
                             "setValue" => "prepend",
                         ],
-                        "script" => "wizard_add.php",
+                        'module' => [
+                            'name' => 'wizard_add'
+                        ]
                     ],
-                    "list"      => [
-                        "type"   => "script",
-                        "title"  => "List",
-                        "icon"   => "list.gif",
-                        "params" => [
+                    'list' => [
+                        'type' => 'script',
+                        'title' => 'List',
+                        'icon' => 'actions-system-list-open',
+                        'params' => [
                             "table" => "tx_dmmjobcontrol_category",
                             "pid"   => "###CURRENT_PID###",
                         ],
-                        "script" => "wizard_list.php",
-                    ],
-                    "edit"      => [
-                        "type"                     => "popup",
-                        "title"                    => "Edit",
-                        "script"                   => "wizard_edit.php",
-                        "popup_onlyOpenIfSelected" => 1,
-                        "icon"                     => "edit2.gif",
-                        "JSopenParams"             => "height=350,width=580,status=0,menubar=0,scrollbars=1",
-                    ],
+                        'module' => [
+                            'name' => 'wizard_list'
+                        ]
+                    ]
                 ],
             ],
         ],
         "discipline"            => [
             "exclude" => 1,
-            "label"   => "LLL:EXT:dmmjobcontrol/locallang_db.xml:tx_dmmjobcontrol_job.discipline",
+            "label"   => "LLL:EXT:dmmjobcontrol/Resources/Private/Language/locallang_db.xml:tx_dmmjobcontrol_job.discipline",
             "config"  => [
                 "type"                => "select",
                 "foreign_table"       => "tx_dmmjobcontrol_discipline",
-                "foreign_table_where" => "AND tx_dmmjobcontrol_discipline.pid=###STORAGE_PID### AND tx_dmmjobcontrol_discipline.sys_language_uid=CAST('###REC_FIELD_sys_language_uid###' AS UNSIGNED) ORDER BY tx_dmmjobcontrol_discipline.uid",
+                "foreign_table_where" => "AND tx_dmmjobcontrol_discipline.sys_language_uid=CAST('###REC_FIELD_sys_language_uid###' AS UNSIGNED) ORDER BY tx_dmmjobcontrol_discipline.uid",
                 "size"                => 10,
                 "minitems"            => 0,
                 "maxitems"            => 100,
                 "MM"                  => "tx_dmmjobcontrol_job_discipline_mm",
-                "wizards"             => [
+                'wizards' => [
                     "_PADDING"  => 2,
-                    "_VERTICAL" => 1,
-                    "add"       => [
-                        "type"   => "script",
-                        "title"  => "Create new record",
-                        "icon"   => "add.gif",
-                        "params" => [
+                    '_VERTICAL' => 1,
+                    'edit' => [
+                        'type' => 'popup',
+                        'title' => 'Edit',
+                        'module' => [
+                            'name' => 'wizard_edit',
+                        ],
+                        'popup_onlyOpenIfSelected' => 1,
+                        'icon' => 'actions-open',
+                        'JSopenParams' => 'width=800,height=600,status=0,menubar=0,scrollbars=1'
+                    ],
+                    'add' => [
+                        'type' => 'script',
+                        'title' => 'Create new record',
+                        'icon' => 'actions-add',
+                        'params' => [
                             "table"    => "tx_dmmjobcontrol_discipline",
                             "pid"      => "###CURRENT_PID###",
                             "setValue" => "prepend",
                         ],
-                        "script" => "wizard_add.php",
+                        'module' => [
+                            'name' => 'wizard_add'
+                        ]
                     ],
-                    "list"      => [
-                        "type"   => "script",
-                        "title"  => "List",
-                        "icon"   => "list.gif",
-                        "params" => [
+                    'list' => [
+                        'type' => 'script',
+                        'title' => 'List',
+                        'icon' => 'actions-system-list-open',
+                        'params' => [
                             "table" => "tx_dmmjobcontrol_discipline",
                             "pid"   => "###CURRENT_PID###",
                         ],
-                        "script" => "wizard_list.php",
-                    ],
-                    "edit"      => [
-                        "type"                     => "popup",
-                        "title"                    => "Edit",
-                        "script"                   => "wizard_edit.php",
-                        "popup_onlyOpenIfSelected" => 1,
-                        "icon"                     => "edit2.gif",
-                        "JSopenParams"             => "height=350,width=580,status=0,menubar=0,scrollbars=1",
-                    ],
+                        'module' => [
+                            'name' => 'wizard_list'
+                        ]
+                    ]
                 ],
             ],
         ],
         "education"             => [
             "exclude" => 1,
-            "label"   => "LLL:EXT:dmmjobcontrol/locallang_db.xml:tx_dmmjobcontrol_job.education",
+            "label"   => "LLL:EXT:dmmjobcontrol/Resources/Private/Language/locallang_db.xml:tx_dmmjobcontrol_job.education",
             "config"  => [
                 "type"                => "select",
                 "foreign_table"       => "tx_dmmjobcontrol_education",
-                "foreign_table_where" => "AND tx_dmmjobcontrol_education.pid=###STORAGE_PID### AND tx_dmmjobcontrol_education.sys_language_uid=CAST('###REC_FIELD_sys_language_uid###' AS UNSIGNED) ORDER BY tx_dmmjobcontrol_education.uid",
+                "foreign_table_where" => "AND tx_dmmjobcontrol_education.sys_language_uid=CAST('###REC_FIELD_sys_language_uid###' AS UNSIGNED) ORDER BY tx_dmmjobcontrol_education.uid",
                 "size"                => 10,
                 "minitems"            => 0,
                 "maxitems"            => 100,
                 "MM"                  => "tx_dmmjobcontrol_job_education_mm",
-                "wizards"             => [
+                'wizards' => [
                     "_PADDING"  => 2,
-                    "_VERTICAL" => 1,
-                    "add"       => [
-                        "type"   => "script",
-                        "title"  => "Create new record",
-                        "icon"   => "add.gif",
-                        "params" => [
+                    '_VERTICAL' => 1,
+                    'edit' => [
+                        'type' => 'popup',
+                        'title' => 'Edit',
+                        'module' => [
+                            'name' => 'wizard_edit',
+                        ],
+                        'popup_onlyOpenIfSelected' => 1,
+                        'icon' => 'actions-open',
+                        'JSopenParams' => 'width=800,height=600,status=0,menubar=0,scrollbars=1'
+                    ],
+                    'add' => [
+                        'type' => 'script',
+                        'title' => 'Create new record',
+                        'icon' => 'actions-add',
+                        'params' => [
                             "table"    => "tx_dmmjobcontrol_education",
                             "pid"      => "###CURRENT_PID###",
                             "setValue" => "prepend",
                         ],
-                        "script" => "wizard_add.php",
+                        'module' => [
+                            'name' => 'wizard_add'
+                        ]
                     ],
-                    "list"      => [
-                        "type"   => "script",
-                        "title"  => "List",
-                        "icon"   => "list.gif",
-                        "params" => [
+                    'list' => [
+                        'type' => 'script',
+                        'title' => 'List',
+                        'icon' => 'actions-system-list-open',
+                        'params' => [
                             "table" => "tx_dmmjobcontrol_education",
                             "pid"   => "###CURRENT_PID###",
                         ],
-                        "script" => "wizard_list.php",
-                    ],
-                    "edit"      => [
-                        "type"                     => "popup",
-                        "title"                    => "Edit",
-                        "script"                   => "wizard_edit.php",
-                        "popup_onlyOpenIfSelected" => 1,
-                        "icon"                     => "edit2.gif",
-                        "JSopenParams"             => "height=350,width=580,status=0,menubar=0,scrollbars=1",
-                    ],
+                        'module' => [
+                            'name' => 'wizard_list'
+                        ]
+                    ]
                 ],
             ],
         ],
         "contact"               => [
             "exclude" => 1,
-            "label"   => "LLL:EXT:dmmjobcontrol/locallang_db.xml:tx_dmmjobcontrol_job.contact",
+            "label"   => "LLL:EXT:dmmjobcontrol/Resources/Private/Language/locallang_db.xml:tx_dmmjobcontrol_job.contact",
             "config"  => [
                 "type"                => "select",
                 "items"               => [
                     ["", 0],
                 ],
                 "foreign_table"       => "tx_dmmjobcontrol_contact",
-                "foreign_table_where" => "AND tx_dmmjobcontrol_contact.pid=###STORAGE_PID### ORDER BY tx_dmmjobcontrol_contact.uid",
+                "foreign_table_where" => "ORDER BY tx_dmmjobcontrol_contact.uid",
                 "size"                => 1,
                 "minitems"            => 0,
                 "maxitems"            => 1,
-                "wizards"             => [
+                'wizards' => [
                     "_PADDING"  => 2,
-                    "_VERTICAL" => 1,
-                    "add"       => [
-                        "type"   => "script",
-                        "title"  => "Create new record",
-                        "icon"   => "add.gif",
-                        "params" => [
+                    '_VERTICAL' => 1,
+                    'edit' => [
+                        'type' => 'popup',
+                        'title' => 'Edit',
+                        'module' => [
+                            'name' => 'wizard_edit',
+                        ],
+                        'popup_onlyOpenIfSelected' => 1,
+                        'icon' => 'actions-open',
+                        'JSopenParams' => 'width=800,height=600,status=0,menubar=0,scrollbars=1'
+                    ],
+                    'add' => [
+                        'type' => 'script',
+                        'title' => 'Create new record',
+                        'icon' => 'actions-add',
+                        'params' => [
                             "table"    => "tx_dmmjobcontrol_contact",
                             "pid"      => "###CURRENT_PID###",
                             "setValue" => "prepend",
                         ],
-                        "script" => "wizard_add.php",
-                    ],
-                    "edit"      => [
-                        "type"                     => "popup",
-                        "title"                    => "Edit",
-                        "script"                   => "wizard_edit.php",
-                        "popup_onlyOpenIfSelected" => 1,
-                        "icon"                     => "edit2.gif",
-                        "JSopenParams"             => "height=350,width=580,status=0,menubar=0,scrollbars=1",
-                    ],
+                        'module' => [
+                            'name' => 'wizard_add'
+                        ]
+                    ]
                 ],
             ],
         ],
