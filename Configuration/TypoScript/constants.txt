@@ -1,19 +1,19 @@
 plugin.dmmjobcontrol {
     ## TEMPLATE FILES
     # cat=plugin.tx_dmmjobcontrol_pi1//; type=file[html,htm,tmpl,txt]; label= List template: List view template
-    template.list = EXT:dmmjobcontrol/res/list.tmpl
+    template.list = EXT:dmmjobcontrol/Resources/Private/Templates/List.html
 
     # cat=plugin.tx_dmmjobcontrol_pi1//; type=file[html,htm,tmpl,txt]; label= Detail template: Detail view template
-    template.detail = EXT:dmmjobcontrol/res/detail.tmpl
+    template.detail = EXT:dmmjobcontrol/Resources/Private/Templates/Detail.html
 
     # cat=plugin.tx_dmmjobcontrol_pi1//; type=file[html,htm,tmpl,txt]; label= Search template: Search form template
-    template.search = EXT:dmmjobcontrol/res/search.tmpl
+    template.search = EXT:dmmjobcontrol/Resources/Private/Templates/Search.html
 
     # cat=plugin.tx_dmmjobcontrol_pi1//; type=file[html,htm,tmpl,txt]; label= RSS template: RSS list template
-    template.rss = EXT:dmmjobcontrol/res/rss.tmpl
+    template.rss = EXT:dmmjobcontrol/Resources/Private/Templates/Rss.html
 
     # cat=plugin.tx_dmmjobcontrol_pi1//; type=file[html,htm,tmpl,txt]; label= Apply template: Apply form template
-    template.apply = EXT:dmmjobcontrol/res/apply.tmpl
+    template.apply = EXT:dmmjobcontrol/Resources/Private/Templates/Apply.html
 
     ## PIDS
     # cat=plugin.tx_dmmjobcontrol_pi1//; type=int+; label= List PID: PID of the page containing the list display

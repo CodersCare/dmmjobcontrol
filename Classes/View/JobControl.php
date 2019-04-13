@@ -70,11 +70,6 @@ class JobControl extends AbstractPlugin
         $this->pi_loadLL(); // Loading language-labels
         $this->pi_initPIflexForm(); // Init FlexForm configuration for plugin
 
-        // Load the complete TCA array into the global var $TCA, so we can find out what type a certain field is etc.
-        // This will also include the config of user-created fields in extending plugins
-        $GLOBALS['TSFE']->includeTCA();
-        \TYPO3\CMS\Core\Utility\GeneralUtility::loadTCA('tx_dmmjobcontrol_job');
-
         // Get the PID of the sysfolder where everything will be stored.
         if (!is_null($this->cObj->data['pages'])) { // First look for 'startingpoint' config in the plugin
             $this->startpoint = $this->cObj->data['pages'];

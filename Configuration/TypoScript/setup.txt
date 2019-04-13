@@ -1,4 +1,5 @@
 plugin.tx_dmmjobcontrol_pi1 {
+    userFunc = CodersCare\DmmJobControl\View\JobControl->main
     template {
         list = {$plugin.dmmjobcontrol.template.list}
         detail = {$plugin.dmmjobcontrol.template.detail}
