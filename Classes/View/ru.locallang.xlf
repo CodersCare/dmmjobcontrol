@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+    <file source-language="en" datatype="plaintext" original="messages" date="2012-08-14T23:11:00Z"
+          product-name="dmmjobcontrol">
+        <header/>
+        <body>
+            <trans-unit id="tx_dmmjobcontrol_sector" xml:space="preserve">
+				<source>JobControl: Sector</source>
+			</trans-unit>
+            <trans-unit id="no_jobs_found">
+                <source>No jobs were found</source>
+                <target>No jobs were found</target>
+            </trans-unit>
+            <trans-unit id="apply_header">
+                <source>Fill in the form to apply online</source>
+                <target>Заполните форму, чтобу подать заявку онлайн</target>
+            </trans-unit>
+            <trans-unit id="apply_label">
+                <source>Apply</source>
+                <target>Обратиться</target>
+            </trans-unit>
+            <trans-unit id="apply_link">
+                <source>Apply online</source>
+                <target>Обратиться онлайн</target>
+            </trans-unit>
+            <trans-unit id="fullname_label">
+                <source>Your name</source>
+                <target>Ваше имя</target>
+            </trans-unit>
+            <trans-unit id="email_label">
+                <source>Your emailaddress</source>
+                <target>Ваш email</target>
+            </trans-unit>
+            <trans-unit id="motivation_label">
+                <source>Motivation</source>
+                <target>Мотивация</target>
+            </trans-unit>
+            <trans-unit id="apply_email_subject">
+                <source>Job application for job:</source>
+                <target>Обращение по поводу работы:</target>
+            </trans-unit>
+            <trans-unit id="apply_thanks">
+                <source>Thank you for applying. We will contact you as soon as possible.</source>
+                <target>Спасибо за обращение. Мы свяжемся с вами как только будет возможно.</target>
+            </trans-unit>
+            <trans-unit id="wrong_document_type">
+                <source>This file is not allowed. You can only upload text documents.</source>
+                <target>Этот файл не принят. Вы можете загружать только текстовые документы.</target>
+            </trans-unit>
+            <trans-unit id="cv_label">
+                <source>Upload your C.V.</source>
+                <target>Загрузите Ваше C.V.</target>
+            </trans-unit>
+            <trans-unit id="letter_label">
+                <source>Upload your letter</source>
+                <target>Upload your letter</target>
+            </trans-unit>
+            <trans-unit id="file_label">
+                <source>Upload your file</source>
+                <target>Upload your file</target>
+            </trans-unit>
+            <trans-unit id="crdate_label">
+                <source>Added on</source>
+                <target>Добавлено</target>
+            </trans-unit>
+            <trans-unit id="tstamp_label">
+                <source>Last modified on</source>
+                <target>Last modified on</target>
+            </trans-unit>
+            <trans-unit id="reference_label">
+                <source>Reference number</source>
+                <target>Номер</target>
+            </trans-unit>
+            <trans-unit id="job_title_label">
+                <source>Job title</source>
+                <target>Название вакансии</target>
+            </trans-unit>
+            <trans-unit id="employer_label">
+                <source>Employer</source>
+                <target>Наниматель</target>
+            </trans-unit>
+            <trans-unit id="employer_description_label">
+                <source>Employer description</source>
+                <target>Описание нанимателя</target>
+            </trans-unit>
+            <trans-unit id="location_label">
+                <source>Location</source>
+                <target>Расположение</target>
+            </trans-unit>
+            <trans-unit id="short_job_description_label">
+                <source>Short job description</source>
+                <target>Краткое описание работы</target>
+            </trans-unit>
+            <trans-unit id="job_description_label">
+                <source>Job description</source>
+                <target>Описание работы</target>
+            </trans-unit>
+            <trans-unit id="experience_label">
+                <source>Experience</source>
+                <target>Опыт</target>
+            </trans-unit>
+            <trans-unit id="job_requirements_label">
+                <source>Job requirements</source>
+                <target>Требования</target>
+            </trans-unit>
+            <trans-unit id="job_benefits_label">
+                <source>Job benefits</source>
+                <target>Job benefits</target>
+            </trans-unit>
+            <trans-unit id="apply_information_label">
+                <source>Apply information</source>
+                <target>Apply information</target>
+            </trans-unit>
+            <trans-unit id="salary_label">
+                <source>Salary</source>
+                <target>Доход</target>
+            </trans-unit>
+            <trans-unit id="job_type_label">
+                <source>Job type</source>
+                <target>Тип работы</target>
+            </trans-unit>
+            <trans-unit id="contract_type_label">
+                <source>Contract type</source>
+                <target>Тип контракта</target>
+            </trans-unit>
+            <trans-unit id="region_label">
+                <source>Region</source>
+                <target>Регион</target>
+            </trans-unit>
+            <trans-unit id="sector_label">
+                <source>Sector</source>
+                <target>Сектор</target>
+            </trans-unit>
+            <trans-unit id="category_label">
+                <source>Category</source>
+                <target>Категория</target>
+            </trans-unit>
+            <trans-unit id="discipline_label">
+                <source>Discipline</source>
+                <target>Дисциплина</target>
+            </trans-unit>
+            <trans-unit id="education_label">
+                <source>Level of education</source>
+                <target>Уровень образования</target>
+            </trans-unit>
+            <trans-unit id="keyword_label">
+                <source>Keyword</source>
+                <target>Ключевое слово</target>
+            </trans-unit>
+            <trans-unit id="search_label">
+                <source>Search</source>
+                <target>Поиск</target>
+            </trans-unit>
+            <trans-unit id="reset_label">
+                <source>Reset</source>
+                <target>Сброс</target>
+            </trans-unit>
+            <trans-unit id="backtojob">
+                <source>Back to job details</source>
+                <target>Назад к описанию вакансии</target>
+            </trans-unit>
+            <trans-unit id="backtolist">
+                <source>Back to joblist</source>
+                <target>Назад к списку вакансий</target>
+            </trans-unit>
+            <trans-unit id="job_not_found">
+                <source>This job does not exist or is not available anymore.</source>
+                <target>Эта вакансия не существует или более не доступна.</target>
+            </trans-unit>
+            <trans-unit id="wrong_display_code">
+                <source>Error: the display code was not set or set to a non-existing value.</source>
+                <target>Ошибка: код отображения не установлен или установлен на несуществующее значение.</target>
+            </trans-unit>
+            <trans-unit id="template_not_found">
+                <source>Error: the template-file was not found.</source>
+                <target>Ошибка: файл шаблона не найден.</target>
+            </trans-unit>
+            <trans-unit id="form_select_text">
+                <source>------</source>
+                <target>------</target>
+            </trans-unit>
+            <trans-unit id="link_prev">
+                <source>Previous page</source>
+                <target>Пред.стр.</target>
+            </trans-unit>
+            <trans-unit id="link_next">
+                <source>Next page</source>
+                <target>След.стр.</target>
+            </trans-unit>
+            <trans-unit id="pagebrowser_header">
+                <source>Jobs ###PAGE_FROM### to ###PAGE_TO### of ###TOTAL_JOBS###</source>
+                <target>Вакансии с ###PAGE_FROM### по ###PAGE_TO### из ###TOTAL_JOBS###</target>
+            </trans-unit>
+            <trans-unit id="mail_from_name">
+                <source>JobControl job application</source>
+                <target>JobControl job application</target>
+            </trans-unit>
+            <trans-unit id="apply_missing_fields">
+                <source>One or more required fields are missing:</source>
+                <target>One or more required fields are missing:</target>
+            </trans-unit>
+            <trans-unit id="contact_name_label">
+                <source>Contact name</source>
+                <target>Contact name</target>
+            </trans-unit>
+            <trans-unit id="contact_address_label">
+                <source>Contact address</source>
+                <target>Contact address</target>
+            </trans-unit>
+            <trans-unit id="contact_phone_label">
+                <source>Contact phone</source>
+                <target>Contact phone</target>
+            </trans-unit>
+            <trans-unit id="contact_email_label">
+                <source>Contact email</source>
+                <target>Contact email</target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

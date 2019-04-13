@@ -39,7 +39,7 @@ use TYPO3\CMS\Frontend\Plugin\AbstractPlugin;
 class JobControl extends AbstractPlugin
 {
     var $prefixId = 'tx_dmmjobcontrol_pi1';
-    var $scriptRelPath = 'pi1/class.tx_dmmjobcontrol_pi1.php';
+    var $scriptRelPath = 'Classes/View/JobControl.php';
     var $extKey = 'dmmjobcontrol';
     var $pi_checkCHash = 0;
     var $pi_USER_INT_obj = 1;

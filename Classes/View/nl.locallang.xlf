@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+    <file source-language="en" datatype="plaintext" original="messages" date="2012-08-14T23:11:00Z"
+          product-name="dmmjobcontrol">
+        <header/>
+        <body>
+            <trans-unit id="tx_dmmjobcontrol_sector" xml:space="preserve">
+				<source>JobControl: Sector</source>
+			</trans-unit>
+            <trans-unit id="no_jobs_found">
+                <source>No jobs were found</source>
+                <target>Er zijn geen vacatures gevonden</target>
+            </trans-unit>
+            <trans-unit id="apply_header">
+                <source>Fill in the form to apply online</source>
+                <target>Vul uw gegevens in om direct te solliciteren</target>
+            </trans-unit>
+            <trans-unit id="apply_label">
+                <source>Apply</source>
+                <target>Solliciteren</target>
+            </trans-unit>
+            <trans-unit id="apply_link">
+                <source>Apply online</source>
+                <target>Direct solliciteren</target>
+            </trans-unit>
+            <trans-unit id="fullname_label">
+                <source>Your name</source>
+                <target>Uw naam</target>
+            </trans-unit>
+            <trans-unit id="email_label">
+                <source>Your emailaddress</source>
+                <target>Uw emailadres</target>
+            </trans-unit>
+            <trans-unit id="motivation_label">
+                <source>Motivation</source>
+                <target>Motivatie</target>
+            </trans-unit>
+            <trans-unit id="apply_email_subject">
+                <source>Job application for job:</source>
+                <target>Sollicitatie op vacature:</target>
+            </trans-unit>
+            <trans-unit id="apply_thanks">
+                <source>Thank you for applying. We will contact you as soon as possible.</source>
+                <target>Bedankt voor je sollicitatie. We nemen zo spoedig mogelijk contact met jeop.</target>
+            </trans-unit>
+            <trans-unit id="wrong_document_type">
+                <source>This file is not allowed. You can only upload text documents.</source>
+                <target>Dit bestand is niet toegestaan. Alleen tekstdocumenten zijn toegestaan.</target>
+            </trans-unit>
+            <trans-unit id="cv_label">
+                <source>Upload your C.V.</source>
+                <target>Upload uw C.V.</target>
+            </trans-unit>
+            <trans-unit id="letter_label">
+                <source>Upload your letter</source>
+                <target>Upload uw sollicitatiebrief</target>
+            </trans-unit>
+            <trans-unit id="file_label">
+                <source>Upload your file</source>
+                <target>Upload uw bestand</target>
+            </trans-unit>
+            <trans-unit id="crdate_label">
+                <source>Added on</source>
+                <target>Geplaatst op</target>
+            </trans-unit>
+            <trans-unit id="tstamp_label">
+                <source>Last modified on</source>
+                <target>Laatst gewijzigd op</target>
+            </trans-unit>
+            <trans-unit id="reference_label">
+                <source>Reference number</source>
+                <target>Referentie</target>
+            </trans-unit>
+            <trans-unit id="job_title_label">
+                <source>Job title</source>
+                <target>Functienaam</target>
+            </trans-unit>
+            <trans-unit id="employer_label">
+                <source>Employer</source>
+                <target>Werkgever</target>
+            </trans-unit>
+            <trans-unit id="employer_description_label">
+                <source>Employer description</source>
+                <target>Werkgeveromschrijving</target>
+            </trans-unit>
+            <trans-unit id="location_label">
+                <source>Location</source>
+                <target>Lokatie</target>
+            </trans-unit>
+            <trans-unit id="short_job_description_label">
+                <source>Short job description</source>
+                <target>Korte functieomschrijving</target>
+            </trans-unit>
+            <trans-unit id="job_description_label">
+                <source>Job description</source>
+                <target>Functieomschrijving</target>
+            </trans-unit>
+            <trans-unit id="experience_label">
+                <source>Experience</source>
+                <target>Ervaring</target>
+            </trans-unit>
+            <trans-unit id="job_requirements_label">
+                <source>Job requirements</source>
+                <target>Functie-eisen</target>
+            </trans-unit>
+            <trans-unit id="job_benefits_label">
+                <source>Job benefits</source>
+                <target>Arbeidsvoorwaarden</target>
+            </trans-unit>
+            <trans-unit id="apply_information_label">
+                <source>Apply information</source>
+                <target>Sollicitatie procedure</target>
+            </trans-unit>
+            <trans-unit id="salary_label">
+                <source>Salary</source>
+                <target>Salaris</target>
+            </trans-unit>
+            <trans-unit id="job_type_label">
+                <source>Job type</source>
+                <target>Type</target>
+            </trans-unit>
+            <trans-unit id="contract_type_label">
+                <source>Contract type</source>
+                <target>Dienstverband</target>
+            </trans-unit>
+            <trans-unit id="region_label">
+                <source>Region</source>
+                <target>Provincie</target>
+            </trans-unit>
+            <trans-unit id="sector_label">
+                <source>Sector</source>
+                <target>Branche</target>
+            </trans-unit>
+            <trans-unit id="category_label">
+                <source>Category</source>
+                <target>Functiegroep</target>
+            </trans-unit>
+            <trans-unit id="discipline_label">
+                <source>Discipline</source>
+                <target>Vakgebied</target>
+            </trans-unit>
+            <trans-unit id="education_label">
+                <source>Level of education</source>
+                <target>Opleidingsniveau</target>
+            </trans-unit>
+            <trans-unit id="keyword_label">
+                <source>Keyword</source>
+                <target>Trefwoord</target>
+            </trans-unit>
+            <trans-unit id="search_label">
+                <source>Search</source>
+                <target>Zoeken</target>
+            </trans-unit>
+            <trans-unit id="reset_label">
+                <source>Reset</source>
+                <target>Wissen</target>
+            </trans-unit>
+            <trans-unit id="backtojob">
+                <source>Back to job details</source>
+                <target>Terug naar de vacature</target>
+            </trans-unit>
+            <trans-unit id="backtolist">
+                <source>Back to joblist</source>
+                <target>Terug naar vacature-overzicht</target>
+            </trans-unit>
+            <trans-unit id="job_not_found">
+                <source>This job does not exist or is not available anymore.</source>
+                <target>Deze baan is niet gevonden of is niet meer beschikbaar.</target>
+            </trans-unit>
+            <trans-unit id="wrong_display_code">
+                <source>Error: the display code was not set or set to a non-existing value.</source>
+                <target>Fout: de display code is niet ingevuld, of is op een niet bestaande waarde gezet. </target>
+            </trans-unit>
+            <trans-unit id="template_not_found">
+                <source>Error: the template-file was not found.</source>
+                <target>Fout: het template-bestand kon niet gevonden worden.</target>
+            </trans-unit>
+            <trans-unit id="form_select_text">
+                <source>------</source>
+                <target>------</target>
+            </trans-unit>
+            <trans-unit id="link_prev">
+                <source>Previous page</source>
+                <target>Vorige pagina</target>
+            </trans-unit>
+            <trans-unit id="link_next">
+                <source>Next page</source>
+                <target>Volgende pagina</target>
+            </trans-unit>
+            <trans-unit id="pagebrowser_header">
+                <source>Jobs ###PAGE_FROM### to ###PAGE_TO### of ###TOTAL_JOBS###</source>
+                <target>Vacatures ###PAGE_FROM### t/m ###PAGE_TO### van ###TOTAL_JOBS###</target>
+            </trans-unit>
+            <trans-unit id="mail_from_name">
+                <source>JobControl job application</source>
+                <target>JobControl vacature sollicitatie</target>
+            </trans-unit>
+            <trans-unit id="apply_missing_fields">
+                <source>One or more required fields are missing:</source>
+                <target>Een of meerdere verplichte velden zijn niet ingevuld:</target>
+            </trans-unit>
+            <trans-unit id="contact_name_label">
+                <source>Contact name</source>
+                <target>Contactpersoon</target>
+            </trans-unit>
+            <trans-unit id="contact_address_label">
+                <source>Contact address</source>
+                <target>Adres</target>
+            </trans-unit>
+            <trans-unit id="contact_phone_label">
+                <source>Contact phone</source>
+                <target>Telefoon</target>
+            </trans-unit>
+            <trans-unit id="contact_email_label">
+                <source>Contact email</source>
+                <target>Email</target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

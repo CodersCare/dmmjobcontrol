@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+    <file source-language="en" datatype="plaintext" original="messages" date="2012-08-14T23:11:00Z"
+          product-name="dmmjobcontrol">
+        <header/>
+        <body>
+            <trans-unit id="tx_dmmjobcontrol_sector" xml:space="preserve">
+				<source>JobControl: Sector</source>
+			</trans-unit>
+            <trans-unit id="no_jobs_found">
+                <source>No jobs were found</source>
+                <target>Es wurden keine Job-Angebote gefunden</target>
+            </trans-unit>
+            <trans-unit id="apply_header">
+                <source>Fill in the form to apply online</source>
+                <target>Zur Online-Bewerbung bitte Formular ausfüllen</target>
+            </trans-unit>
+            <trans-unit id="apply_label">
+                <source>Apply</source>
+                <target>Bewerben</target>
+            </trans-unit>
+            <trans-unit id="apply_link">
+                <source>Apply online</source>
+                <target>Online Bewerben</target>
+            </trans-unit>
+            <trans-unit id="fullname_label">
+                <source>Your name</source>
+                <target>Ihr Name</target>
+            </trans-unit>
+            <trans-unit id="email_label">
+                <source>Your emailaddress</source>
+                <target>Ihre E-Mail</target>
+            </trans-unit>
+            <trans-unit id="motivation_label">
+                <source>Motivation</source>
+                <target>Motivation</target>
+            </trans-unit>
+            <trans-unit id="apply_email_subject">
+                <source>Job application for job:</source>
+                <target>Bewerbung:</target>
+            </trans-unit>
+            <trans-unit id="apply_thanks">
+                <source>Thank you for applying. We will contact you as soon as possible.</source>
+                <target>Danke für Ihre Bewerbung. Wir melden uns umgehend bei Ihnen.</target>
+            </trans-unit>
+            <trans-unit id="wrong_document_type">
+                <source>This file is not allowed. You can only upload text documents.</source>
+                <target>Dieses Dateiformat wird nicht unterstützt! Sie können nur Textdateien mitsenden.</target>
+            </trans-unit>
+            <trans-unit id="cv_label">
+                <source>Upload your C.V.</source>
+                <target>Ihren Lebenslauf mitsenden</target>
+            </trans-unit>
+            <trans-unit id="letter_label">
+                <source>Upload your letter</source>
+                <target>Ihr Schreiben mitsenden</target>
+            </trans-unit>
+            <trans-unit id="file_label">
+                <source>Upload your file</source>
+                <target>Ihren Akte mitsenden</target>
+            </trans-unit>
+            <trans-unit id="crdate_label">
+                <source>Added on</source>
+                <target>Eingestellt am</target>
+            </trans-unit>
+            <trans-unit id="tstamp_label">
+                <source>Last modified on</source>
+                <target>Modified on</target>
+            </trans-unit>
+            <trans-unit id="reference_label">
+                <source>Reference number</source>
+                <target>Kennziffer</target>
+            </trans-unit>
+            <trans-unit id="job_title_label">
+                <source>Job title</source>
+                <target>Stellenbeschreibung</target>
+            </trans-unit>
+            <trans-unit id="employer_label">
+                <source>Employer</source>
+                <target>Arbeitgeber</target>
+            </trans-unit>
+            <trans-unit id="employer_description_label">
+                <source>Employer description</source>
+                <target>Arbeitgeberbeschreibung</target>
+            </trans-unit>
+            <trans-unit id="location_label">
+                <source>Location</source>
+                <target>Einsatzort</target>
+            </trans-unit>
+            <trans-unit id="short_job_description_label">
+                <source>Short job description</source>
+                <target>Kurze Stellenbeschreibung</target>
+            </trans-unit>
+            <trans-unit id="job_description_label">
+                <source>Job description</source>
+                <target>Stellenbeschreibung</target>
+            </trans-unit>
+            <trans-unit id="experience_label">
+                <source>Experience</source>
+                <target>Fachkenntnisse</target>
+            </trans-unit>
+            <trans-unit id="job_requirements_label">
+                <source>Job requirements</source>
+                <target>Stellenanforderung</target>
+            </trans-unit>
+            <trans-unit id="job_benefits_label">
+                <source>Job benefits</source>
+                <target>Ihre Vorteile</target>
+            </trans-unit>
+            <trans-unit id="apply_information_label">
+                <source>Apply information</source>
+                <target>Bewerbungsinformationen</target>
+            </trans-unit>
+            <trans-unit id="salary_label">
+                <source>Salary</source>
+                <target>Vergütung</target>
+            </trans-unit>
+            <trans-unit id="job_type_label">
+                <source>Job type</source>
+                <target>Beschäftigungsart</target>
+            </trans-unit>
+            <trans-unit id="contract_type_label">
+                <source>Contract type</source>
+                <target>Vertragsart</target>
+            </trans-unit>
+            <trans-unit id="region_label">
+                <source>Region</source>
+                <target>Gebiet/Ort</target>
+            </trans-unit>
+            <trans-unit id="sector_label">
+                <source>Sector</source>
+                <target>Branche</target>
+            </trans-unit>
+            <trans-unit id="category_label">
+                <source>Category</source>
+                <target>Kategorie</target>
+            </trans-unit>
+            <trans-unit id="discipline_label">
+                <source>Discipline</source>
+                <target>Fachgebiet</target>
+            </trans-unit>
+            <trans-unit id="education_label">
+                <source>Level of education</source>
+                <target>Bildungsabschluss</target>
+            </trans-unit>
+            <trans-unit id="keyword_label">
+                <source>Keyword</source>
+                <target>Suchbegriff</target>
+            </trans-unit>
+            <trans-unit id="search_label">
+                <source>Search</source>
+                <target>Suchen</target>
+            </trans-unit>
+            <trans-unit id="reset_label">
+                <source>Reset</source>
+                <target>Zurücksetzen</target>
+            </trans-unit>
+            <trans-unit id="backtojob">
+                <source>Back to job details</source>
+                <target>Zurück zur Stellenbeschreibung</target>
+            </trans-unit>
+            <trans-unit id="backtolist">
+                <source>Back to joblist</source>
+                <target>Zurück zu den Stellenangeboten</target>
+            </trans-unit>
+            <trans-unit id="job_not_found">
+                <source>This job does not exist or is not available anymore.</source>
+                <target>Diese Stelle existiert nicht oder ist nicht mehr verfügbar.</target>
+            </trans-unit>
+            <trans-unit id="wrong_display_code">
+                <source>Error: the display code was not set or set to a non-existing value.</source>
+                <target>Fehler: Der angezeigte Code wurde nicht gesetzt oder wurde auf einen nicht existierenden Wert gesetzt.</target>
+            </trans-unit>
+            <trans-unit id="template_not_found">
+                <source>Error: the template-file was not found.</source>
+                <target>Fehler: Die Template-Datei wurde nicht gefunden.</target>
+            </trans-unit>
+            <trans-unit id="form_select_text">
+                <source>------</source>
+                <target>------</target>
+            </trans-unit>
+            <trans-unit id="link_prev">
+                <source>Previous page</source>
+                <target>vorheige Seite</target>
+            </trans-unit>
+            <trans-unit id="link_next">
+                <source>Next page</source>
+                <target>folgende Seite</target>
+            </trans-unit>
+            <trans-unit id="pagebrowser_header">
+                <source>Jobs ###PAGE_FROM### to ###PAGE_TO### of ###TOTAL_JOBS###</source>
+                <target>Stellenanzeigen ###PAGE_FROM### bis ###PAGE_TO### von ###TOTAL_JOBS###</target>
+            </trans-unit>
+            <trans-unit id="mail_from_name">
+                <source>JobControl job application</source>
+                <target>JobControl Bewerbung</target>
+            </trans-unit>
+            <trans-unit id="apply_missing_fields">
+                <source>One or more required fields are missing:</source>
+                <target>Eines oder mehrere Felder wurde(n) noch nicht ausgefüllt</target>
+            </trans-unit>
+            <trans-unit id="contact_name_label">
+                <source>Contact name</source>
+                <target>Kontaktname</target>
+            </trans-unit>
+            <trans-unit id="contact_address_label">
+                <source>Contact address</source>
+                <target>Kontaktadresse</target>
+            </trans-unit>
+            <trans-unit id="contact_phone_label">
+                <source>Contact phone</source>
+                <target>Telefon</target>
+            </trans-unit>
+            <trans-unit id="contact_email_label">
+                <source>Contact email</source>
+                <target>E-Mail</target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>
